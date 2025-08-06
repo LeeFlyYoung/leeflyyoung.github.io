@@ -24,7 +24,7 @@ params:
   title: "Leefy's Blog"
   description: "Leefy's Blog - https://leeflyyoung.github.io/"
   author: ["LeeFlyYoung"]
-  images: ["images/avatar.png"]
+  # images: ["images/avatar.png"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false

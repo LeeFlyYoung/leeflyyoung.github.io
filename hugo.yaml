@@ -5,149 +5,73 @@ title: "Leefy's Blog"
 copyright: "© 2025 [Leefy's Blog](https://leeflyyoung.github.io/)"
 theme: [PaperMod]
 
-enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-enableEmoji: true
-pygmentsUseClasses: true
-mainsections: ["posts", "papermod"]
 
 minify:
   disableXML: true
-  # minifyOutput: true
+  minifyOutput: true
 
 pagination:
   disableAliases: false
   pagerSize: 5
 
-# languages:
-#   en:
-#     languageName: "English"
-#     weight: 1
-#     taxonomies:
-#       category: categories
-#       tag: tags
-#       series: series
-#     menu:
-#       main:
-#         - name: Archive
-#           url: archives
-#           weight: 5
-#         - name: Search
-#           url: search/
-#           weight: 10
-#         - name: Tags
-#           url: tags/
-#           weight: 10
-#         - name: WiKi
-#           url: https://github.com/adityatelange/hugo-PaperMod/wiki/
-
-#   fr:
-#     languageName: ":fr:"
-#     weight: 2
-#     title: PaperModL2
-#     taxonomies:
-#       category: FRcategories
-#       tag: FRtags
-#       series: FRseries
-#     menu:
-#       main:
-#         - name: Archive
-#           url: archives/
-#           weight: 5
-#         - name: FRTags
-#           url: frtags
-#           weight: 10
-#         - name: FRCategories
-#           url: frcategories
-#           weight: 10
-#         - name: FRSeries
-#           url: frseries
-#           weight: 10
-#         - name: NullLink
-#           url: "#"
-
-#     # custom params for each language should be under [langcode].parms - hugo v0.120.0
-#     params:
-#       languageAltTitle: French
-#       profileMode:
-#         enabled: true
-#         title: PaperMod
-#         imageUrl: "https://raw.githubusercontent.com/googlefonts/noto-emoji/master/svg/emoji_u1f9d1_1f3fb_200d_1f4bb.svg"
-#         imageTitle: ProfileMode image
-#         # imageWidth: 120
-#         # imageHeight: 120
-#         subtitle: "☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive"
-#         buttons:
-#           - name: Blog
-#             url: posts
-#           - name: Profile Mode
-#             url: https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode
-
-#   fa:
-#     languagedirection: rtl
-#     weight: 3
-#     title: PaperMod RTL
-#     taxonomies:
-#       category: FAcategories
-#       tag: FAtags
-#       series: FAseries
-#     menu:
-#       main:
-#         - name: FATags
-#           url: fatags
-#           weight: 10
-#     # custom params for each language should be under [langcode].parms - hugo v0.120.0
-#     params:
-#       homeInfoParams:
-#         Title: "Hi there \U0001F44B"
-#         Content: Welcome to RTL layout
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
-
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
+
+  title: "Leefy's Blog"
   description: "Leefy's Blog - https://leeflyyoung.github.io/"
   author: ["LeeFlyYoung"]
-  # author: ["Me", "You"] # multiple authors
-
-  defaultTheme: auto
-  # disableThemeToggle: true
-  ShowShareButtons: true
+  images: ["images/avatar.png"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
   ShowReadingTime: true
-  # disableSpecial1stPost: true
-  displayFullLangName: true
+  ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  ShowAllPagesInArchive: true
-  ShowPageNums: true
-  ShowToc: true
-  # comments: false
-  images: ["images/papermod-cover.png"]
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  # assets:
+  #   # disableHLJS: true # to disable highlight.js
+  #   # disableFingerprinting: true
+  #   favicon: "<link / abs url>"
+  #   favicon16x16: "<link / abs url>"
+  #   favicon32x32: "<link / abs url>"
+  #   apple_touch_icon: "<link / abs url>"
+  #   safari_pinned_tab: "<link / abs url>"
+
+  # label:
+  #   text: "Home"
+  #   icon: /apple-touch-icon.png
+  #   iconHeight: 35
 
   profileMode:
     enabled: true
     title: Leefy's Blog
-    subtitle: 👋 Hello everyone, this is Leefy's blog. <br>I'm Leefy, trying to use AI for everything.
+    subtitle: <br>👋 Hello everyone, this is Leefy's blog. <br>I'm Leefy, trying to use AI for everything.<br><br>
     imageUrl: "images/avatar.png"
     imageTitle: Leefy
     # imageWidth: 120
     # imageHeight: 120
-    buttons:
-      - name: Posts
-        url: posts
-      - name: Archives
-        url: archives
-      - name: Tags
-        url: tags
+    # buttons:
+    #   - name: Posts
+    #     url: posts
+
+    #   - name: Tags
+    #     url: tags
 
   homeInfoParams:
     Title: "Leefy's Blog"
@@ -192,14 +116,34 @@ params:
   #     hiddenInList: true # hide on list pages and home
   #     hiddenInSingle: true # hide on single page
 
-  # fuseOpts:
-  #     isCaseSensitive: false
-  #     shouldSort: true
-  #     location: 0
-  #     distance: 1000
-  #     threshold: 0.4
-  #     minMatchCharLength: 0
-  #     keys: ["title", "permalink", "summary", "content"]
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: posts
+      name: posts
+      url: /posts/
+      weight: 5
+    - identifier: categories
+      name: categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: example
+      name: example.org
+      url: https://example.org
+      weight: 30
 
 markup:
   goldmark:

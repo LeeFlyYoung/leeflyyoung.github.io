@@ -85,20 +85,12 @@ params:
     - name: X
       title: Share on X/Twitter
       url: "https://x.com/intent/tweet/?text=Checkout%20Leefy's%20Blog%20%E2%9C%A8%0AA%20researcher%20trying%20to%20use%20AI%20for%20everything.&url=https://leeflyyoung.github.io&hashtags=Leefy,LeeFlyYoung"
-    # - name: KoFi
-    #   title: Buy me a Ko-Fi :)
-    #   url: "https://ko-fi.com/adityatelange"
-
-  # editPost:
-  #   URL: "https://github.com/LeeFlyYoung/leeflyyoung.github.io/tree/main/content"
-  #   Text: "Suggest Changes" # edit text
-  #   appendFilePath: true # to append file path to Edit link
 
   # label:
-  # iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
-  # text: "Home"
-  # icon: icon.png
-  # iconHeight: 35
+  #   iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
+  #   text: "Home"
+  #   icon: icon.png
+  #   iconHeight: 35
 
   # analytics:
   #     google:
@@ -106,11 +98,6 @@ params:
 
   assets:
     disableHLJS: true
-  #     favicon: "<link / abs url>"
-  #     favicon16x16: "<link / abs url>"
-  #     favicon32x32: "<link / abs url>"
-  #     apple_touch_icon: "<link / abs url>"
-  #     safari_pinned_tab: "<link / abs url>"
 
   # cover:
   #     hidden: true # hide everywhere but not in structured data
@@ -137,10 +124,6 @@ menu:
       name: archives
       url: /archives/
       weight: 5
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
     - identifier: tags
       name: tags
       url: /tags/
